@@ -1,0 +1,81 @@
+<html lang="ar" dir="rtl">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>صفحة المنتسب بعد البحث </title>
+        <style>
+            form {
+             width: 100%;
+             height: 1000px;   
+             padding: 20px;
+            }
+            .banner {
+             position: relative;
+             height: 250px;
+            }
+        </style>
+    </head>
+        <body>
+        <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" type="text/css"-->
+        <div class="testbox">              
+            <form enctype="multipart/form-data"  method="POST" action="data.php">
+        <!--Note:Be sure your file upload form has attribute enctype="multipart/form-data" otherwise the file upload will not work-->         <div class="banner">
+                <h1>معلومات المنتسب صاحب الرقم </h1>
+                </div><br>
+                    <fieldset>
+                        <legend>معلومات المنتسب</legend>
+                        <div class="colums">
+                         <div class="item">
+                             <label for="name">الاسم الثلاثي لصاحب المعاملة</label>
+                            <input type="text" id="name" name="name"  />
+                         </div>
+                         <div class="item">
+                            <label for="id">رقم المعاملة</label>
+                            <input type="number" id="id" name="id"  />
+                         </div>
+                         <div class="item">
+                            <label for="email">البريد الالكتروني</label>
+                            <input type="email" id="email" name="email" />
+                         </div>
+                         <div class="item">
+                            <label for="mobile"> رقم الموبايل</label>
+                            <input type="number" id="mobile" name="mobile"   />
+                         </div>
+                         <div class="item">
+                            <label for="place">جهة الانتساب</label>
+                            <input type="text" id="place" name="place" />
+                         </div>
+                         <div class="item">
+                            <label for="subject"> العنوان/الموضوع </label>
+                            <input type="text" id="subject" name="subject"   />
+                         </div>
+                        </div>
+                   </fieldset>  <br/>
+            <fieldset>
+                <legend>تفاصيل المعاملة</legend>
+
+                <div class="colums">
+                    <div class="item">
+                        <label for="tahmesh">التهميش على المعاملة</label>
+                        <input type="text" id="tahmesh" name="tahmesh"  />
+                    </div>
+                    <div class="item">
+                        <label for="birthday">تاريخ رفع المعاملة</label>
+                        <input type="date" id="birthday" name="birthday"  />
+                    </div>
+                    <div class="item">
+                        <label for="target-gehat">الجهة المعنية بالمعاملة حالياًَ</label>
+                        <input type="text" id="target-gehat" name="target-gehat"  />
+                    </div>
+                    <div class="item">
+                        <label for="myfile">عرض المرفقات التي تم تهميشها على المعاملة</label>
+                        <input type="file" id="myfile" name="myfile"  />
+                    </div>
+                </div>
+            </fieldset>
+                
+</form>
+        </div>
+    </body>
+</html>
